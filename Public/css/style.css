@@ -1,0 +1,61 @@
+body {
+    width: 75%;
+   margin: 0px auto;
+   background-image: url("../images/blue-pattern-background.jpg"); 
+
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+}
+
+#main {
+    background-color: #1f5f77;
+}
+
+header {
+    height: 100px;
+}
+
+header > nav {
+    height: 100%;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+main h1 {
+    font-weight: bold;
+}
+
+ main h2 {
+    font-weight: 300;
+}
+
+#logo-icon {
+   margin-left: 50px;
+   margin-top: 20px;
+}
+
+#logo {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+#head-nav-links {
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.mainpanel{
+   margin-top: 20px;
+}
+
+#mainpanel-content {
+    margin: 15%;
+}
+
+.user-profile {
+    background-image: url("../images/pattern-texture-light-background.jpg");
+    padding-left: 2%;
+}

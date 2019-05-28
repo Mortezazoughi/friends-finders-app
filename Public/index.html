@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friend Finder App</title>
+
+	<!-- Link to the jQuery Library -->
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  	<!-- Including Font Awesome Icons -->
+  	<script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
+
+	<!-- Link to reset stylesheet -->
+	<link rel="stylesheet" href="css/reset.css">
+
+	<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Compiled and minified Materialize CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+	<!-- Compiled and minified Materialize JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+          
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+        <section id="main" class="section" style="height: 86vh">
+	<header>
+        
+		<nav>
+			<div class="nav-wrapper blue-grey accent-2">
+				<i class="fa fa-address-book-o fa-5x" aria-hidden="true" id=logo-icon></i>
+				<a href="/" class="brand-logo" id="logo">Friend Finder</a>
+				<ul class="right hide-on-med-and-down" id="head-nav-links">
+					<li><a href="/survey">Survey</a></li>
+					<li><a href="/api/friends">API Friends List</a></li>
+					<li><a href="https://github.com/Mortezazoughi/friends-finders-app">GitHub Repo</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col s5 yellow lighten-4 z-depth-5 mainpanel">
+					<div id="mainpanel-content">
+						<h2>Friend Finder</h1>
+						<div class="divider"></div>
+						<h5>Answer a few basic questions.</h5>
+						<h5>Find the friend with the greatest compatibility!</h5>
+						<a href="/survey">
+							<button class="btn waves-effect waves-light" type="submit" name="action">Take The Survey
+								<i class="material-icons right">send</i>
+							</button>
+						</a>
+					</div>
+                </div>
+                <div class="col s6  photopanel" style="margin-left: 5%;">
+                    <!-- SECTION: SLIDER -->
+            <section class="slider" >
+            <ul class="slides" style="background-color: #1f5f77; margin-top: 15%;">
+              <li>
+                <img src="images/Headshot-10.png" alt="" />
+                
+              </li>
+              <li>
+                <img src="images/Photo-1726548.png" alt="" />
+                
+              </li>
+              <li>
+                <img src="images/Photo-1726598.png" alt="" />
+                
+              </li>
+              <li>
+                    <img src="images/woman-portrait-face-studio-37546.png" alt="" />
+                    
+                  </li>        
+            </ul>
+      </section>
+                </div>
+			</div>
+		</div>
+    
+    
+  <div class="row">
+        <div class="col s12 m3" style= "margin-left: 8%;">
+          <div class="card transparent">
+            <div class="card-content white-text">
+                   
+              
+              <p> "We felt like we had known each other our whole lives. I couldn't imagine not knowing her. ”
+
+                    - Simon </p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col s12 m3" style= "margin-left: 5%;">
+                <div class="card transparent">
+                  <div class="card-content white-text">
+                   
+                    <p>     “
+                            I love how we are completely compatible, so thank you  ”
+                        
+                        - Ann</p>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col s12 m3" style= "margin-left: 5%;">
+                    <div class="card transparent">
+                      <div class="card-content white-text">
+                           
+                        <p>     “
+                                We truly would not have met. Taking the survey helped us to get to know each other. ”
+                            
+                            - Maya</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+      </div>
+    </main>         
+</section>
+<div class="blue-grey" style="height: 40px; text-align: center; height: 6.2vh;" ><h4 class="black-text darken-2">Friend Finder App</h4></div>
+
+	<footer class="page-footer yellow lighten-4 ">
+		
+		<div class="footer-copyright black-text darken-2" style="height: 4vh;">
+			<div class="container ">
+				&copy Morteza Zoughi 2019
+				
+			</div>
+		</div>
+    </footer>
+    
+    <script>
+    $('.slider').slider({
+          indicators: false,          
+          transition: 700,
+          interval: 6000
+        });
+    </script>
+
+</body>
+</html>
