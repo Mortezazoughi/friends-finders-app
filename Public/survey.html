@@ -31,9 +31,9 @@
                         <i class="fa fa-address-book-o fa-5x" aria-hidden="true" id=logo-icon></i>
                         <a href="/" class="brand-logo" id="logo">Friend Finder</a>
                         <ul class="right hide-on-med-and-down" id="head-nav-links">
-                            <li><a href="/survey">Survey</a></li>
-                            <li><a href="/api/friends">API Friends List</a></li>
-                            <li><a href="https://github.com/Mortezazoughi/friends-finders-app">GitHub Repo</a></li>
+                            <li><a href="/survey.html">Survey</a></li>
+                            <li><a href="/api/friends" target="_blank">API Friends List</a></li>
+                            <li><a href="https://github.com/Mortezazoughi/friends-finders-app" target="_blank">GitHub Repo</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -235,7 +235,7 @@
 			<img id="userMatchImage" class="materialboxed" width="650" src="">
 		</div>
 		<div class="modal-footer">
-			<a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Try Again!</a>
+			<a href="/survey.html" class="modal-action modal-close waves-effect waves-green btn-flat">Try Again!</a>
 		</div>
 	</div>
 
@@ -271,11 +271,11 @@
 					$('#question10').val().trim()
 				]
 			};
-			// console.log('userInput = ' + JSON.stringify(userInput));
-			// Add user inputs to friends list
+			
+			// Add user inputs to database list
 			$.post('/api/friends', userInput)
       		.done(function(data) {
-      			// console.log('response = ' + JSON.stringify(data));
+      			
       			// Set the name and image values of friend match
       			$('#userMatch').html(data.matchName);
 		    	$("#userMatchImage").attr("src", data.matchImage);
@@ -284,6 +284,9 @@
       		});
         });
         $('select').formSelect();
+        $(document).ready(function(){
+    $('.modal').modal();
+  });
 	</script>
 </body>
 </html>
