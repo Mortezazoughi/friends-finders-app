@@ -20,8 +20,8 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 //require(path.join(__dirname, './routes/apiRoutes'))(app);
 //require(path.join(__dirname, './routes/htmlRoutes'))(app);
 
-require('./routes/apiRoutes')(app);
-require('./routes/htmlRoutes')(app);
+require('./Routes/apiRoutes')(app);
+require('./Routes/htmlRoutes')(app);
 
 // Start listening on PORT
 app.listen(PORT, function() {
